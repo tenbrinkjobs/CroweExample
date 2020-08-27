@@ -1,0 +1,17 @@
+{
+    "components": [{
+        "type": "DisplayConsole.ConsoleLogger, DisplayConsole",
+        "services": [{
+            "type": "Contract.ILogger, Contract"
+          }]
+      },
+      {
+      "type": "DisplayConsole.ConsoleDisplayService, DisplayConsole",
+      "services": [{
+        "type": "Contract.IDisplayService, Contract"
+      }]
+    }],
+    "modules":[{
+        "type": "DataSource.IOC.DataSourceModule, DataSource"
+        }]
+  }
